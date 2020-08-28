@@ -25,7 +25,6 @@ public class Calculator {
 			numbers[i]=sc.nextInt();
 		}
 			}
-		System.out.println("Enter the Expression: ");
 		if(op == 1)
 		{
 			obj = new Addition();
