@@ -15,7 +15,7 @@ public class EmpMainClass {
 			choice = sc.nextInt();
 			switch (choice) {
 			case 1:
-				System.out.println("Enter Id: ");
+				System.out.println("Enter the Id: ");
 				int id = sc.nextInt();
 				System.out.println("Enter the Name: ");
 				String name = sc.next();
@@ -25,7 +25,7 @@ public class EmpMainClass {
 				String designation = sc.next();
 				Employee emp = new Employee(id, name, department, designation);
 				empManagement.addRecord(emp);
-				System.out.println("Record has been added..!!");
+				System.out.println("Record has been added ..!!");
 				System.out.println("==================================");
 				break;
 			/*case 2:
