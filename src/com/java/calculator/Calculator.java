@@ -7,7 +7,7 @@ public class Calculator {
 		Operations obj;
 		Scanner sc = new Scanner(System.in);
 		int numbers[]= {0};  //default initialization
-		int op,ex;
+		int op;
 		do 
 		{
 		System.out.println("Choose the operation from the menu: \n1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n5.Evaluate expression \n6. Exit");
@@ -51,14 +51,16 @@ public class Calculator {
 			EvaluateExpression ep=new EvaluateExpression();
 			ep.evaluateexp(s);
 		}
+		else if(op == 6) {
+			System.exit(0);
+		}
 		else
 		{
 			System.out.println("Invalid Operation");
 		}
 		}
-		System.out.println("Do you want to continue? 1.Yes 2.No");
-		ex=sc.nextInt();
-		}while(ex==1);
+		
+		}while(op!=6);
 		sc.close();
 	}
 
